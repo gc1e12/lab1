@@ -2,12 +2,13 @@
 My big file of javascript
 */
 
-var carArray = new Array('car-blue.png',"greencar.png",'pink.png',"carred.png",'yella-car.png');
+var carArray = new Array('car-blue.png',"greencar.png",'pink.png',"car-red.png",'yellacar.png');
 
 function changeCar() {
 	var banger = carArray[Math.floor(Math.random() * carArray.length)];
 	//console.log(banger);
 	document.getElementById("car").src = "img/" + banger;
+	
 }
 
 function startTimer() {
@@ -104,7 +105,7 @@ function numberWithCommas(number) {
 // I don't want people being able to save pictures of our hot rod stock
 // If they want to see our cars they have to buy them first
 function disableRightClick() {
-	
+ //document.getElementById("car").oncontextmenu = "return false";
 }
 
 
