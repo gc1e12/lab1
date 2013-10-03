@@ -68,7 +68,7 @@ function calculateLoan(){
 	// We don't want to give loans under £1000
 	// We want to make stacks of money, not just pocket change
 	if(borrowValue < 1000){
-		var message = "I'm sorry that is too little to borrow. Perhaps borrow &pound;1,000,000. It won't cost much, you can trust us.";
+		var message = "I'm sorry that is too little to borrow. Perhaps borrow &pound;1,000. It won't cost much, you can trust us.";
 	}
 	else {
 		// my special interest rate calculation
