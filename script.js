@@ -73,8 +73,10 @@ function calculateLoan(){
 	else {
 		// my special interest rate calculation
 		// passed down through my family
-		var monthlyTotal = borrowValue * (monthlyInterestRate / (1 - (Math.pow((1 + monthlyInterestRate),(borrowTime * -1)))));
-		var monthlyTotalRounded = Math.round(monthlyTotal);
+		//var monthlyTotal = borrowValue * (monthlyInterestRate / (1 - (Math.pow((1 + monthlyInterestRate),(borrowTime * -1)))));
+		
+			var monthlyTotal = (borrowValue + (borrowValue/ 100) * interestRate)/borrowTime;
+			var monthlyTotalRounded = Math.round(monthlyTotal);
 		
 		var message = "We are happy to loan you &pound;" + numberWithCommas(borrowValue) + ". It will only cost <b>&pound;" + numberWithCommas(monthlyTotalRounded) + "</b> a month! That's a steal!";
 		
